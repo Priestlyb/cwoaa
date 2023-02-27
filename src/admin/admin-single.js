@@ -25,9 +25,9 @@ const Adminsingle = (props) => {
             <div className='col-4 mt-3'>{event_desc.slice(0,25)}. . .</div>
             <div className='row col-12 mt-3'>
 
-                <a href={`/updateevent/${_id}`} type="button" className="col-lg-12 btn btn-sm btn-outline-secondary edit_btn" >Edit</a>
+                <a href={`/updateevent/${_id}`} type="button" className="col-lg-12 btn btn-sm btn-light edit_btn" >Edit</a>
 
-                <button type="button" className="col-lg-12 mt-2 btn btn-sm btn-outline-secondary" onClick={deleteHandler}>Delete</button>
+                <button type="button" className="col-lg-12 mt-2 btn btn-sm btn-danger" onClick={deleteHandler}>Delete</button>
 
             </div>
         </div>

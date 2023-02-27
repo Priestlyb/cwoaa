@@ -30,7 +30,7 @@ const EventsAdd = ({ setClose }) => {
     );
     const { url } = uploadRes.data;
 
-    const response = await axiosInstance.post('http://localhost:9000/events', {
+    const response = await axiosInstance.post('/events', {
       event_img: url,
       event_desc: inputs.event_desc,
     });

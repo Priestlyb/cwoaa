@@ -21,7 +21,7 @@ function Footer() {
     </div>
     <div className="footer-section links">
       <h2>Quick Links</h2>
-      <ul>
+      <ul className='mt-4'>
         <li><a href="/news">News</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/prayer">Prayer</a></li>
@@ -30,15 +30,7 @@ function Footer() {
     </div>
     <div className="footer-section contact-form">
       <h2>Contact Us</h2>
-      <form>
-        <input type="email" name="email" placeholder="Enter your email address" />
-        <textarea name="message" placeholder="Enter your message"></textarea>
-        <button className="cta Go_back_icon">
-                <span className="hover-underline-animation"><a href='/#portfolios'>
-                  Send
-                </a> </span>
-              </button>
-      </form>
+      <a class="btn email_btn" href="mailto:cwoaamedia@gmail.com">Email ME</a>
     </div>
   </div>
   <div className="container footer-bottom">
