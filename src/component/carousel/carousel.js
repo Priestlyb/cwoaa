@@ -61,7 +61,7 @@ const Carousel = () => {
             <br />
             forced to stay behind
             <br />
-            but side by side in truw equality
+            but side by side in true equality
             <br />
             <br />
             Refrain
