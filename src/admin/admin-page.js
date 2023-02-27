@@ -64,10 +64,11 @@ function Adminpage() {
             {!close && <EventsAdd setClose={setClose} />}
 
           </div>
-          <div className='col-lg-3'>Images</div>
-          <div className='col-lg-3'>Titles</div>
-          <div className='col-lg-3'>Description</div>
-          <div className='col-lg-3'>Action</div>
+          
+          <div className='col-4'>Images</div>
+          <div className='col-4'>Titles</div>
+          <div className='col-4'>Description</div>
+
           {events && events
             .filter((event) => {
               const searchTerm = search.toLowerCase();
@@ -75,15 +76,17 @@ function Adminpage() {
               return searchTerm === '' ? event : eventsDesc.includes(searchTerm);
             })
             .map((event, id) => (
-              <div className='row col-lg-12' key={id}>
+              <div className='row col-lg-13' key={id}>
                 <Adminsingle event={event} />
               </div>
             ))}
         </div>
 
+        {/* End of Event Data */}
+
         <div className='row col-lg-6'>
           <div className='col-12'>
-            <h1>News Data</h1>
+            <h1 className='mt-5'>News Data</h1>
           </div>
           <div className='col-lg-12'>
 
@@ -91,21 +94,11 @@ function Adminpage() {
             {!close && <EventsAdd setClose={setClose} />} */}
 
           </div>
-          <div className='col-lg-3'>Images</div>
-          <div className='col-lg-3'>Titles</div>
-          <div className='col-lg-3'>Description</div>
-          <div className='col-lg-3'>Action</div>
-          {events && events
-            .filter((event) => {
-              const searchTerm = search.toLowerCase();
-              const eventsDesc = event.event_desc ? event.event_desc.toLowerCase() : '';
-              return searchTerm === '' ? event : eventsDesc.includes(searchTerm);
-            })
-            .map((event, id) => (
-              <div className='row col-lg-12' key={id}>
-                <Adminsingle event={event} />
-              </div>
-            ))}
+
+          <div className='col-4'>Images</div>
+          <div className='col-4'>Titles</div>
+          <div className='col-4'>Description</div>
+
         </div>
 
       </div>

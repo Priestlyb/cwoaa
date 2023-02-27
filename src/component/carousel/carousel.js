@@ -41,7 +41,7 @@ const Carousel = () => {
 
         <div class="pricing-column col-lg-3 col-md-3">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header card_header">
             <strong>CWOAA Anthem</strong>
           </div>
         </div>
@@ -50,10 +50,55 @@ const Carousel = () => {
       <div class="pricing-column col-lg-9 col-md-9">
         <div class="card">
           <div class="card-body">
-            <p className='reason-p'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <br /> <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className='reason-p women_anthem'>
+            All Across the Nation
+            <br />
+            All around the world
+            <br />
+            women are longing in the shadows
+            <br />
+            no longer in the shadows
+            <br />
+            forced to stay behind
+            <br />
+            but side by side in truw equality
+            <br />
+            <br />
+            Refrain
+            <br />
+            So sing a song for women everywhere
+            <br />
+            let it ring around the world and never, never cease,
+            <br />
+            So sing a song for women everywhere
+            <br />
+            equality, development and peace
+            <br />
+            <br />
+            women can't be silent
+            <br />
+            when around the world
+            <br />
+            people hurt abd hungry childern cry
+            <br />
+            we'll sing out now for justice and development
+            <br />
+            and hold the rights of all the people high
+            <br />
+            <br />
+            Refrain
+            <br />
+            <br />
+            Women now are working to build a better world
+            <br />
+            where the love of peace can rest an every shore
+            <br />
+            where men lay down thier weapons and learn to love and share
+            <br />
+            and people work to bring an end to war
+            <br />
+            <br />
+            refrain
             </p>
           </div>
         </div>

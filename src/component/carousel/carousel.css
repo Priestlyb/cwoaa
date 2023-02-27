@@ -68,6 +68,16 @@
   box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.3) ;
 }
 
+.women_anthem {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card_header {
+  color: #000;
+  background-color: #fff;
+}
+
 @media screen and (max-width: 1020px) {
   .carousel {
     margin-top: 0px;

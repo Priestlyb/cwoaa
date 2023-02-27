@@ -208,7 +208,6 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
 }
 
@@ -485,5 +484,13 @@
         200px 0 var(--shadowcolor),
         200px 0 var(--shadowcolor),
         200px 0 var(--shadowcolor);
+  }
+}
+
+
+
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    width: 80%;
   }
 }
