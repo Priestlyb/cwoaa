@@ -1,0 +1,149 @@
+/* Footer Styles */
+
+.footer {
+    color: #333;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .about p {
+    max-width: 400px;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .socials a {
+    color: #000;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .socials a:hover {
+    color: #FEA82F;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: #FEA82F;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+
+  /* Go_back_icon */
+
+.cta {
+  border: none;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.cta a {
+  color: #333;
+  text-decoration: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #333;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 1000px) {
+    .footer-content {
+      flex-wrap: wrap;
+    }
+    
+    .footer-section {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .footer-section {
+      flex-basis: 100%;
+    }
+  }
+  

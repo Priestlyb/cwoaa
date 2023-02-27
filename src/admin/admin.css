@@ -1,0 +1,19 @@
+.db_header {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+
+.upload_img {
+    width: 100px;
+    aspect-ratio:  1/1;
+    object-fit: contain;
+}
+
+.edit_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+.btt-btn {
+    z-index: 1;
+    position: fixed;
+    top: 90%;
+    right: 15px;
+    font-size: 14px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.btt-btn i {
+    color: #000;
+    font-weight: 800;
+}
