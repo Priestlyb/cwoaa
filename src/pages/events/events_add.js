@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { axiosInstance } from '../../config';
 
 const EventsAdd = ({ setClose }) => {
   const history = useNavigate();
@@ -24,13 +24,13 @@ const EventsAdd = ({ setClose }) => {
     const data = new FormData();
     data.append('file', file);
     data.append('upload_preset', 'uploads');
-    const uploadRes = await axios.post(
+    const uploadRes = await axiosInstance.post(
       'https://api.cloudinary.com/v1_1/priestlythedon/image/upload',
       data
     );
     const { url } = uploadRes.data;
 
-    const response = await axios.post('http://localhost:9000/events', {
+    const response = await axiosInstance.post('http://localhost:9000/events', {
       event_img: url,
       event_desc: inputs.event_desc,
     });

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import EventBtn from '../pages/events/event_btn'
 import EventsAdd from '../pages/events/events_add'
-import axios from 'axios';
 import Adminsingle from './admin-single';
+import { axiosInstance } from '../config';
 
 function Adminpage() {
 
   //Axios Request
-  const URL = "http://localhost:9000/events";
+  const URL = "/events";
   const fetchHandler = async () => {
-    return await axios.get(URL).then((res) => res.data)
+    return await axiosInstance.get(URL).then((res) => res.data)
   }
 
   const [events, setEvents] = useState();

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./events.css"
 import Event from './event';
-import axios from 'axios';
+import { axiosInstance } from '../../config';
 
 function Events() {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,9 +11,9 @@ function Events() {
   }, []); 
 
   //Axios Request
-  const URL = "http://localhost:9000/events";
+  const URL = "/events";
   const fetchHandler = async () => {
-    return await axios.get(URL).then((res) => res.data)
+    return await axiosInstance.get(URL).then((res) => res.data)
   }
 
   const [events, setEvents] = useState();

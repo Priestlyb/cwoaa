@@ -1,7 +1,7 @@
 import React from 'react'
-import axios from 'axios';
 import "./admin.css"
 import { useNavigate } from "react-router-dom";
+import { axiosInstance } from '../config';
 
 const Adminsingle = (props) => {
 
@@ -9,7 +9,7 @@ const Adminsingle = (props) => {
     const { _id, event_img, event_desc } = props.event;
 
     const deleteHandler = async () => {
-        await axios.delete(`http://localhost:9000/events/${_id}`)
+        await axiosInstance.delete(`/events/${_id}`)
             .then((res) => res.data)
             .then(() => history("/"))
             .then(() => history("/cawa411"));

@@ -1,6 +1,6 @@
 export const sliderData = [
   {
-    image: "https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/309443541_395639056096312_420617411476350217_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=_eU7WD_aXKEAX_6xNgU&_nc_ht=scontent-los2-1.xx&oh=00_AfA-lrM-ENC1nScwmTn8xr_aXiXQrcTLMNzQY27AF-4AfA&oe=63F97D3E",
+    image: "https://i.pinimg.com/564x/46/0b/90/460b90365ac0fa55fdaf2bc27181271b.jpg",
     heading: "Slide One",
     desc: "This is the description of slide one Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
   },

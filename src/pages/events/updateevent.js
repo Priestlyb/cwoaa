@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { axiosInstance } from '../../config';
 
 const EventsEdit = ({ event }) => {
   const id = useParams().id;
@@ -10,8 +10,8 @@ const EventsEdit = ({ event }) => {
 
   useEffect(() => {
     const fetchHandler = async () => {
-      await axios
-        .get(`http://localhost:9000/events/${id}`)
+      await axiosInstance
+        .get(`/events/${id}`)
         .then((res) => res.data)
         .then(data => setInputs(data.event));
     };
@@ -36,13 +36,13 @@ const EventsEdit = ({ event }) => {
     const data = new FormData();
     data.append('file', file);
     data.append('upload_preset', 'uploads');
-    const uploadRes = await axios.post(
+    const uploadRes = await axiosInstance.post(
       'https://api.cloudinary.com/v1_1/priestlythedon/image/upload',
       data
     );
     const { url } = uploadRes.data;
 
-    const response = await axios.put(`http://localhost:9000/events/${id}`, {
+    const response = await axiosInstance.put(`/events/${id}`, {
       event_img: url,
       event_desc: inputs.event_desc,
     });
