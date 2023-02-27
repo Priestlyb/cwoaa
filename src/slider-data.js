@@ -1,7 +1,7 @@
 export const sliderData = [
   {
     image: "https://i.pinimg.com/564x/46/0b/90/460b90365ac0fa55fdaf2bc27181271b.jpg",
-    heading: "If we you are obiedant, Rise your hands up!",
+    heading: "If we you are obedient, Rise your hands up!",
     desc: "This is the description of slide one Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
   },
   {
