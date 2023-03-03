@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "./component/layout";
 import Navbar from "./component/navbar/navbar";
 import Footer from "./component/footer/footer";
 import Quickcontact from "./component/quick-contact/quick-contact";
 import AdminPage from "./admin/admin-page";
-import LoginForm from "./admin/login-form";
 import About from "./pages/about/about";
 import Prayer from "./pages/prayer/prayer";
 import Event from "./pages/events/events";
 import News from "./pages/news/news";
 import EventsEdit from "./pages/events/updateevent";
+import Login from "./pages/login/Login";
+import { Context } from "./context/Context";
 
 function App() {
+  const { user } = useContext(Context);
   return (
     <>
       < Router>
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Layout />} />
-          <Route path="/login" element={<LoginForm />} />
-          <Route path="/cawa411" element={<AdminPage />} />
+          <Route path="/admin" element={user ? <AdminPage /> : <Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/prayer" element={<Prayer />} />
           <Route path="/events" element={<Event />} />

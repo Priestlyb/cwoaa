@@ -3,8 +3,15 @@ import EventBtn from '../pages/events/event_btn'
 import EventsAdd from '../pages/events/events_add'
 import Adminsingle from './admin-single';
 import { axiosInstance } from '../config';
+import "./admin.css"
 
 function Adminpage() {
+  
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+   setTimeout(() => setIsLoading(false), 3000);
+ }, []); 
 
   //Axios Request
   const URL = "/events";
@@ -23,7 +30,22 @@ function Adminpage() {
   console.log(search)
 
   const [close, setClose] = useState(true);
+  
   return (
+    <>
+    {isLoading ? (
+      <div class="loading">
+      <span class="l">L</span>
+      <span class="o">o</span>
+      <span class="a">a</span>
+      <span class="d">d</span>
+      <span class="i">i</span>
+      <span class="n">n</span>
+      <span class="g">g</span>
+      <span class="d1">.</span>
+      <span class="d2">.</span>
+    </div>
+    ) : (
     <div className='container'>
 
       <h1 className='db_header'>CWOAA Dashboard</h1>
@@ -103,6 +125,8 @@ function Adminpage() {
 
       </div>
     </div>
+    )}
+    </>
   )
 }
 

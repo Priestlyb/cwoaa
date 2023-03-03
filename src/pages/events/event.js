@@ -7,7 +7,7 @@ const Event = (props) => {
     return (
         <div>
 
-                    <div className="col mt-5">
+                    <div className="col mt-5 animate__animated animate__slideInRight">
                         <div className="card shadow-sm">
                             <img src={event_img} alt='' width="100%" height="225" className="card-img-top event_img" />
                             <div className="card-body">
