@@ -1,8 +1,7 @@
-import { useState} from 'react'
-import axios from "axios";
-import { useContext, useRef } from "react";
+import { useState, useContext, useRef} from 'react'
 import { Context } from "../../context/Context";
 import "./Login.css";
+import { axiosInstance } from '../../config';
 
 export default function Login() {
   const emailRef = useRef();
@@ -13,7 +12,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("/login", {
+      const res = await axiosInstance.post("/api/auth/login/", {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       });
