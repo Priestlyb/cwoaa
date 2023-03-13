@@ -35,7 +35,10 @@ function Footer() {
   </div>
 
   <div className="container footer-bottom">
-    <p>&copy; 2023 CWOAA. All rights reserved.</p>
+    <div className='row p-2'>
+    <span className='col-lg-6'>&copy; 2023 CWOAA. All rights reserved.</span>
+    <a href='/admin' className='col-lg-6 text-right text-light'>Admin</a>
+    </div>
   </div>
 </footer>
 
