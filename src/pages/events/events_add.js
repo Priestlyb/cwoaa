@@ -57,7 +57,7 @@ const EventsAdd = (props, { setClose }) => {
         event_sub_title: '',
         event_desc: '',
       });
-      history(`/EventSinglePage/${id}`);
+      history(`/eventsinglepage/${id}`);
     }
   };
 

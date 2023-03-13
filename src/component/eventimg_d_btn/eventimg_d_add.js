@@ -10,7 +10,7 @@ const EventImgDataadd = ({ setClose, event }) => {
     useEffect(() => {
         const fetchHandler = async () => {
             await axiosInstance
-                .get(`http://localhost:9000/events/${id}`)
+                .get(`/events/${id}`)
                 .then((res) => res.data)
                 .then(data => setInputs(data.event));
         };
@@ -40,7 +40,7 @@ const EventImgDataadd = ({ setClose, event }) => {
             setInputs({
                 event_img: '',
             });
-            history(`/EventSinglePage/${id}`);
+            history(`/eventsinglepage/${id}`);
         }
     };
 
