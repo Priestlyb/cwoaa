@@ -1,6 +1,6 @@
-import AddButton from '../pages/events/event_btn'
-import Carousel from './carousel/carousel'
+import Anthem from './anthem/anthem'
 import Feature from './feature/feature'
+import OurMissonVision from './our_misson_vision/our_misson_vision'
 import Slider from './slider/Slider'
 import Slideshow from './slideshow/slideshow'
 
@@ -8,9 +8,10 @@ function Layout() {
   return (
     <div>
       <Slider />
-      <Feature />
-      <Carousel />
+      <OurMissonVision />
       <Slideshow />
+      <Anthem />
+      <Feature />
     </div>
   )
 }

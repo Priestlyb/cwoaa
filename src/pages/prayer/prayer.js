@@ -3,7 +3,7 @@ import "./prayer.css"
 
 function Prayer() {
     return (
-        <div className='container'>
+        <div className='container mt-3'>
 
                 <div class="row featurette">
                     <div class="col-md-7">

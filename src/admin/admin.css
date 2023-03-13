@@ -18,6 +18,14 @@
     align-items: center;
 }
 
+.edit_icon {
+  color: #2E3840;
+}
+
+.edit_icon:hover {
+  color: #2E3840;
+}
+
 
 /* Loader */
 

@@ -1,17 +1,16 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
 import { axiosInstance } from '../../config';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const EventsEdit = ({ event }) => {
   const id = useParams().id;
   const history = useNavigate();
-  const [file, setFile] = useState(null);
 
   useEffect(() => {
     const fetchHandler = async () => {
       await axiosInstance
-        .get(`/events/${id}`)
+        .get(`http://localhost:9000/events/${id}`)
         .then((res) => res.data)
         .then(data => setInputs(data.event));
     };
@@ -21,6 +20,8 @@ const EventsEdit = ({ event }) => {
   const [inputs, setInputs] = useState({
     event_img: event?.event_img ?? '',
     event_desc: event?.event_desc ?? '',
+    event_title: event?.event_title ?? '',
+    event_sub_title: event?.event_sub_title ?? ''
   });
 
   const handleChange = (e) => {
@@ -33,58 +34,42 @@ const EventsEdit = ({ event }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const data = new FormData();
-    data.append('file', file);
-    data.append('upload_preset', 'uploads');
-    const uploadRes = await axiosInstance.post(
-      'https://api.cloudinary.com/v1_1/priestlythedon/image/upload',
-      data
-    );
-    const { url } = uploadRes.data;
-
     const response = await axiosInstance.put(`/events/${id}`, {
-      event_img: url,
+      event_title: inputs.event_title,
+      event_sub_title: inputs.event_sub_title,
       event_desc: inputs.event_desc,
     });
     if (response.data) {
       setInputs({
-        event_img: '',
+        event_title: '',
+        event_sub_title: '',
         event_desc: '',
       });
-      history('/cawa411');
+      history(`/EventSinglePage/${id}`);
     }
   };
-  
+
 
   return (
     <div className="eventsEdit">
       <h1>Edit Event</h1>
 
-      
       <div className="item">
-          <label className="label">Current Image</label>
-          {inputs.event_img && (
-            <img src={inputs.event_img} alt="Current Event" className="eventImg" />
-          )}
-        </div>
-
-
-      <div className="item">
-        <label className="label">Choose a new image</label>
-        <input type="file" className='input' onChange={(e) => setFile(e.target.files[0])} />
+        <label className="label">Event Title</label>
+        <input type="text" name="event_title" value={inputs.event_title} onChange={handleChange} className='input' />
       </div>
 
-      {/* <div className="item">
-        <label className="label">Event Title</label>
-        <input type="text" className='input' />
-      </div> */}
+      <div className="item">
+        <label className="label">Event Sub Title</label>
+        <input type="text" name="event_sub_title" value={inputs.event_sub_title} onChange={handleChange} className='input' />
+      </div>
 
       <label className="label">Event Description</label>
       <textarea rows={4} type="text" name="event_desc" value={inputs.event_desc} onChange={handleChange} className='textarea' />
 
       <button className="eventsEdit_btn" onClick={handleSubmit}>
-          Update
-        </button>
+        Update
+      </button>
     </div>
   );
 };

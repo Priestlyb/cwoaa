@@ -48,7 +48,7 @@ export default function Navbar() {
               </div>
             </li>
 
-            <a href='./admin' className="nav-item active  nav-link">{user && "Admin"}
+            <a href='/admin' className="nav-item active  nav-link">{user && "Admin"}
             </a>
 
             <li className="nav-item active  nav-link" onClick={handleLogout}>{user && "Logout"}

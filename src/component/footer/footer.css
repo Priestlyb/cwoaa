@@ -2,7 +2,6 @@
 
 .footer {
     color: #333;
-    padding: 20px 0;
   }
   
   .footer-content {
@@ -116,6 +115,13 @@
  background-color: rgb(198, 164, 10);
  transform: scaleX(1.4) scaleY(1.5);
  opacity: 0;
+}
+
+.footer-bottom {
+  align-items: center;
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #333;
 }
   
   /* Media Queries */

@@ -12,6 +12,8 @@ import News from "./pages/news/news";
 import EventsEdit from "./pages/events/updateevent";
 import Login from "./pages/login/Login";
 import { Context } from "./context/Context";
+import EventSinglePage from "./pages/events/event_singlepage";
+import EventImgDataadd from "./component/eventimg_d_btn/eventimg_d_add";
 
 function App() {
   const { user } = useContext(Context);
@@ -24,9 +26,11 @@ function App() {
           <Route path="/admin" element={user ? <AdminPage /> : <Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/prayer" element={<Prayer />} />
+          <Route path="/eventsinglepage/:id" element={<EventSinglePage />} />
           <Route path="/events" element={<Event />} />
           <Route path='/updateevent/:id' element={<EventsEdit />} />
           <Route path="/news" element={<News />} />
+          <Route path="/eventimgdataadd/:id" element={<EventImgDataadd />} />
         </Routes>
         <Footer />
         <Quickcontact />

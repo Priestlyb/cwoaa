@@ -16,7 +16,7 @@ function Footer() {
       </p>
       <div className="socials">
         <a href="https://web.facebook.com/cwonigeria" target='blank'><i className="fab fa-facebook"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
+        <a href="/" target='blank'><i className="fab fa-instagram"></i></a>
       </div>
     </div>
     <div className="footer-section links">
@@ -30,9 +30,10 @@ function Footer() {
     </div>
     <div className="footer-section contact-form">
       <h2>Contact Us</h2>
-      <a class="btn email_btn" href="mailto:cwoaamedia@gmail.com">Email ME</a>
+      <a className="btn email_btn" href="mailto:cwoaamedia@gmail.com">Email ME</a>
     </div>
   </div>
+
   <div className="container footer-bottom">
     <p>&copy; 2023 CWOAA. All rights reserved.</p>
   </div>

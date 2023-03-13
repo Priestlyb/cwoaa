@@ -179,7 +179,7 @@
 
 .mainEvent_btn {
   padding: 10px;
-  margin: 20px;
+  margin: 20px 0;
   background-color: #2E3840;
   width: 150px;
   border-radius: 10px;
@@ -195,6 +195,7 @@
   background-color: rgba(245, 240, 240, 0.52);
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
   display: flex;
   align-items: center;

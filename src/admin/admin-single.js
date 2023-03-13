@@ -6,22 +6,27 @@ import { axiosInstance } from '../config';
 const Adminsingle = (props) => {
 
     const history = useNavigate();
-    const { _id, event_img, event_desc } = props.event;
+    const { _id, event_img, event_desc, event_title } = props.event;
 
     const deleteHandler = async () => {
         await axiosInstance.delete(`/events/${_id}`)
             .then((res) => res.data)
             .then(() => history("/"))
-            .then(() => history("/cawa411"));
+            .then(() => history("/admin"));
     }
     return (
         <div className='row d-flex justify-content-center align-items-center p-4'>
             {/* events */}
 
-            <div className='col-4 mt-3 d-flex justify-content-center align-items-center'>
+            <div className='col-4 mt-3 d-block justify-content-center align-items-center'>
                 <img src={event_img} alt=''  className='upload_img' />
+                <div>
+                    <a href={`/eventimgdataadd/${_id}`} className='edit_icon' >
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    </a>
+                </div>
             </div>
-            <div className='col-4 mt-3'>Titles</div>
+            <div className='col-4 mt-3'>{event_title}</div>
             <div className='col-4 mt-3'>{event_desc.slice(0,25)}. . .</div>
             <div className='row col-12 mt-3'>
 
