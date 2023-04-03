@@ -20,53 +20,51 @@ function Bookmass() {
                     <strong>Account: <span>0434908920</span></strong>
 
                     <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="1000">
-                        <div class="bm_input-container">
-                            <input class="bm_input" name="text" type="text" />
-                            <label class="label" for="input">Family Name</label>
-                            <div class="topline"></div>
-                            <div class="underline"></div>
+                        <div className="bm_input-container">
+                            <input className="bm_input" name="text" type="text" />
+                            <label className="label" for="input">Family Name</label>
+                            <div className="topline"></div>
+                            <div className="underline"></div>
                         </div>
                     </div>
 
                     <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="900">
-                        <div class="bm_input-container">
-                            <input class="bm_input" name="text" type="text" />
-                            <label class="label" for="input">Email address</label>
-                            <div class="topline"></div>
-                            <div class="underline"></div>
+                        <div className="bm_input-container">
+                            <input className="bm_input" name="text" type="text" />
+                            <label className="label" for="input">Email address</label>
+                            <div className="topline"></div>
+                            <div className="underline"></div>
                         </div>
                     </div>
 
                     <div className='col-lg-6' data-aos="fade-up" data-aos-duration="800">
-                        <div class="bm_input-container">
-                            <input class="bm_input" name="text" type="datetime-local" min="2000-01-01T00:00" max="2500-06-14T00:00" />
-                            <label class="label" for="input">Date</label>
-                            <div class="topline"></div>
-                            <div class="underline"></div>
+                        <div className="bm_input-container">
+                            <input className="bm_input" name="text" type="datetime-local" min="2000-01-01T00:00" max="2500-06-14T00:00" />
+                            <label className="label" for="input">Date</label>
                         </div>
                     </div>
 
                     <div className='col-lg-6' data-aos="fade-up" data-aos-duration="700">
-                        <div class="bm_input-container">
-                            <input class="bm_input" placeholder='Receipt' name="text" type="file" />
-                            <label class="label" for="input">Receipt</label>
-                            <div class="topline"></div>
-                            <div class="underline"></div>
+                        <div className="bm_input-container">
+                            <input className="bm_input" placeholder='Receipt' name="text" type="file" />
+                            <label className="label" for="input">Receipt</label>
+                            <div className="topline"></div>
+                            <div className="underline"></div>
                         </div>
                     </div>
 
                     <div className='col-12' data-aos="fade-up" data-aos-duration="600">
-                        <div class="bm_input-container">
-                            <textarea class="bm_input" placeholder='Write your intention' name="text" />
-                            <div class="topline"></div>
-                            <div class="underline"></div>
+                        <div className="bm_input-container">
+                            <textarea className="bm_input" placeholder='Write your intention' name="text" />
+                            <div className="topline"></div>
+                            <div className="underline"></div>
                         </div>
                     </div>
 
                     <div className='bm_btn_cover' data-aos="fade-up" data-aos-duration="500">
-                        <button class="bm_btn">
-                            <span class="bm_btn-text-one">Book now</span>
-                            <span class="bm_btn-text-two">Great!</span>
+                        <button className="bm_btn">
+                            <span className="bm_btn-text-one">Book now</span>
+                            <span className="bm_btn-text-two">Great!</span>
                         </button>
                     </div>
 
