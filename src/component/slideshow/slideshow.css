@@ -28,10 +28,9 @@
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: left;
   font-size: 1.3rem;
   line-height: 1.3em;
-  font-weight: 400;
+  font-weight: 500;
   font-family: sans-serif;
   border-radius: .2rem;
 }
