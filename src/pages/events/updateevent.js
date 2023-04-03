@@ -10,7 +10,7 @@ const EventsEdit = ({ event }) => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axiosInstance
-        .get(`http://localhost:9000/events/${id}`)
+        .get(`/events/${id}`)
         .then((res) => res.data)
         .then(data => setInputs(data.event));
     };

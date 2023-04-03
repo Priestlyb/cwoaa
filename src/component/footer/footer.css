@@ -1,6 +1,7 @@
 /* Footer Styles */
 
 .footer {
+  margin-top: 50px;
     color: #333;
   }
   
@@ -72,12 +73,12 @@
 
   /* email_btn_icon */
 
-  .btn {
+  .email_btn {
     margin-top: 10px;
   }
 
-.btn:link,
-.btn:visited {
+.email_btn:link,
+.email_btn:visited {
  text-transform: uppercase;
  text-decoration: none;
  color: rgb(27, 27, 27);
@@ -89,16 +90,16 @@
  position: relative;
 }
 
-.btn:hover {
+.email_btn:hover {
  transform: translateY(-5px);
  box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
 }
 
-.btn:active {
+.email_btn:active {
  transform: translateY(-3px);
 }
 
-.btn::after {
+.email_btn::after {
  content: "";
  display: inline-block;
  height: 100%;
@@ -111,7 +112,7 @@
  transition: all .3s;
 }
 
-.btn:hover::after {
+.email_btn:hover::after {
  background-color: rgb(198, 164, 10);
  transform: scaleX(1.4) scaleY(1.5);
  opacity: 0;

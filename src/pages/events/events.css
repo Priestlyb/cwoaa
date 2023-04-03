@@ -22,7 +22,8 @@
   background: var(--input-bg);
   position: relative;
   border-radius: 4px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .form label {
@@ -192,8 +193,8 @@
 .event {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(245, 240, 240, 0.52);
   position: fixed;
+  background-color: rgba(245, 240, 240, 0.52);
   top: 0;
   left: 0;
   z-index: 999;
@@ -251,13 +252,12 @@
 }
 
 .addButton {
-  width: 25%;
   border: none;
   background-color: #4D455D;
   color: white;
   font-weight: 500;
   cursor: pointer;
-  padding: 5px 0;
+  padding: 5px;
   align-self: flex-end;
 }
 

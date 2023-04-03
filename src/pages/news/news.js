@@ -69,7 +69,7 @@ function News() {
 
                         <div className='col-lg-5 mt-5'>
                             <h2>Cross section of bishops and participant of the International Youth Conference</h2>
-                            <p>{"Cross section of bishops and participant of the International Youth Conference, held in Enugu from 29th_30th, 2019. Theme: Responding to the challenges of Youth, Family and the Society : The Millennial Response. Organised by Foundation For African Cultural Heritage (FACH ) in collaboration with Catholic Women Organisation Nigeria (CWON)".slice(0, 150)}...... <a>Read more</a></p>
+                            <p>{"Cross section of bishops and participant of the International Youth Conference, held in Enugu from 29th_30th, 2019. Theme: Responding to the challenges of Youth, Family and the Society : The Millennial Response. Organised by Foundation For African Cultural Heritage (FACH ) in collaboration with Catholic Women Organisation Nigeria (CWON)".slice(0, 150)}...... <a href='/'>Read more</a></p>
                         </div>
                         <div className='col-lg-7'>
                             <img src='https://scontent.fabv2-1.fna.fbcdn.net/v/t1.6435-9/51142186_2133150436752631_4470454999675043840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEF5sDKzVZjMMs2Xg6mKt-TL46SG8oSIuwvjpIbyhIi7I0FVg4nGQhF1ABtambtsRZ2MF-W5moBuv1ZE0L6T3QS&_nc_ohc=CUySoDS7tKAAX-cQzAz&_nc_ht=scontent.fabv2-1.fna&oh=00_AfAppT0g518mFmyLb7irPCD2ywm6DoF-Gvd6Vw6EuxC8Bg&oe=64209961' alt='' width="100%" />
@@ -77,7 +77,7 @@ function News() {
 
                         <div className='col-lg-5 mt-5'>
                             <h2>Cross section of bishops and participant of the International Youth Conference</h2>
-                            <p>{"Cross section of bishops and participant of the International Youth Conference, held in Enugu from 29th_30th, 2019. Theme: Responding to the challenges of Youth, Family and the Society : The Millennial Response. Organised by Foundation For African Cultural Heritage (FACH ) in collaboration with Catholic Women Organisation Nigeria (CWON)".slice(0, 150)}...... <a>Read more</a></p>
+                            <p>{"Cross section of bishops and participant of the International Youth Conference, held in Enugu from 29th_30th, 2019. Theme: Responding to the challenges of Youth, Family and the Society : The Millennial Response. Organised by Foundation For African Cultural Heritage (FACH ) in collaboration with Catholic Women Organisation Nigeria (CWON)".slice(0, 150)}...... <a href='/'>Read more</a></p>
                         </div>
                         <div className='col-lg-7'>
                             <img src='https://scontent.fabv2-1.fna.fbcdn.net/v/t1.6435-9/51142186_2133150436752631_4470454999675043840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEF5sDKzVZjMMs2Xg6mKt-TL46SG8oSIuwvjpIbyhIi7I0FVg4nGQhF1ABtambtsRZ2MF-W5moBuv1ZE0L6T3QS&_nc_ohc=CUySoDS7tKAAX-cQzAz&_nc_ht=scontent.fabv2-1.fna&oh=00_AfAppT0g518mFmyLb7irPCD2ywm6DoF-Gvd6Vw6EuxC8Bg&oe=64209961' alt='' width="100%" />

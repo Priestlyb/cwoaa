@@ -6,11 +6,11 @@ function Prayer() {
         <div className='container mt-3'>
 
                 <div class="row featurette">
-                    <div class="col-md-7">
+                    <div class="col-md-7" data-aos="fade-up" data-aos-duration="900">
                         <h2 class="featurette-heading fw-normal lh-1">Mary, Queen of Peace, <br /> <span class="text-muted">Patroness of the World Union of Catholic Women’s Organisations</span></h2>
                         <p class="lead">O Loving God, your Son, Jesus Christ, came into the world to do your Will and leave us His Peace.  Through the intercession and example of our Blessed Mother Mary, Queen of Peace, grant us the wisdom and humility to reflect that peace to the world. Inspire our thoughts, words and deeds to bear witness to your presence in our hearts.  May your Holy Spirit fill us with every grace and blessing so that we may pursue what leads to peace for all humanity. Amen</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5" data-aos="fade-down" data-aos-duration="700">
                        < img src='https://www.wucwo.org/images/files/pictures/Marie,%20Reine%20de%20la%20Paix_0.jpg' alt='' width="250" height="250" background="#eee" color="#aaa" class="bd-img-img-lg featurette-image img-fluid mx-a/u" />
                     </div>
                 </div>

@@ -1,0 +1,131 @@
+.bm_col_right {
+    margin: 0 auto;
+}
+
+.bm_input-container {
+    position: relative;
+    margin-top: 25px;
+}
+
+.bm_input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    box-shadow: 7px 7px 0px 0px #0B2447;
+    transition: all 0.5s;
+}
+
+.bm_input:focus {
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #0B2447;
+    transition: all 0.5s;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.bm_input-container .topline {
+    position: absolute;
+    content: "";
+    background-color: #0B2447;
+    width: 0%;
+    height: 2px;
+    right: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.bm_input-container input[type="text"]:focus~.topline {
+    width: 35%;
+    transition: all 0.5s;
+}
+
+.bm_input-container .underline {
+    position: absolute;
+    content: "";
+    background-color: #0B2447;
+    width: 0%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+.bm_input-container input[type="text"]:focus~.underline {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.bm_input-container input[type="text"]:focus~.label {
+    top: -10px;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.bm_btn_cover {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bm_btn {
+    margin: 25px 0;
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .bm_btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .bm_btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .bm_btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .bm_btn:hover .bm_btn-text-one {
+    top: -100%;
+  }
+  
+  .bm_btn:hover .bm_btn-text-two {
+    top: 50%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .bm_row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }
+  

@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { axiosInstance } from '../../config';
 
-const EventsAdd = (props, { setClose }) => {
+const EventsAdd = ({setClose}) => {
 
-  const {  id, } = props.event;
+  
   const history = useNavigate();
   const [file, setFile] = useState(null);
   // const [extra_event_img, setExtraOption] = useState([]);
@@ -57,7 +57,7 @@ const EventsAdd = (props, { setClose }) => {
         event_sub_title: '',
         event_desc: '',
       });
-      history(`/eventsinglepage/${id}`);
+      history(`/events`);
     }
   };
 

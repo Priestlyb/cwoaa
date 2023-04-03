@@ -3,18 +3,18 @@ import "./slideshow.css"
 
 function Slideshow() {
     return (
-        <div class="col_box">
+        <div className="col_box">
 
             <h1>Lastest News</h1>
 
-            <div class="col_items">
+            <div className="col_items" data-aos="fade-in" data-aos-duration="5000">
 
-                <div class="item">SCROLL SNAP</div>
-                <div class="item">SCROLL SNAP</div>
-                <div class="item">SCROLL SNAP</div>
-                <div class="item">SCROLL SNAP</div>
-                <div class="item">SCROLL SNAP</div>
-                <div class="item">SCROLL SNAP</div>
+                <div className="item">SCROLL SNAP</div>
+                <div className="item">SCROLL SNAP</div>
+                <div className="item">SCROLL SNAP</div>
+                <div className="item">SCROLL SNAP</div>
+                <div className="item">SCROLL SNAP</div>
+                <div className="item">SCROLL SNAP</div>
 
             </div>
 

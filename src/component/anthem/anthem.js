@@ -2,24 +2,23 @@ import React from 'react';
 import './anthem.css';
 
 const Anthem = () => {
-  
 
   return (
     <div className="carousel">
 
-      <div class="container row col_anthem">
+      <div className="container row col_anthem">
 
-        <div class="pricing-column col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-header card_header">
+        <div className="pricing-column col-lg-3 col-md-3" data-aos="fade-left" data-aos-delay="800">
+        <div className="card">
+          <div className="card-header">
             <strong>CWOAA Anthem</strong>
           </div>
         </div>
       </div>
 
-      <div class="pricing-column col-lg-9 col-md-9">
-        <div class="card">
-          <div class="card-body">
+      <div className="pricing-column col-lg-9 col-md-9" data-aos="fade-left">
+        <div className="card">
+          <div className="card-body">
             <p className='reason-p women_anthem'>
             All Across the Nation
             <br />

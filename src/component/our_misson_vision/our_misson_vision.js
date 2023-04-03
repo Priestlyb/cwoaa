@@ -4,21 +4,21 @@ import "./our_misson_vision.css"
 function Our_misson_vision() {
 
     return (
-        <div className='container py-2'>
+        <div className='container py-1'>
             <div className='row'>
-
-                <div className="card col-12 my-5 animate__animated animate__slideInUp">
-                    <div className="card-header">
-                    Who We Are
+                
+                <div className="card col-12 my-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div className="card-header card_header">
+                    <strong>Who We Are</strong>
                     </div>
                     <div className="card-body">
                         <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
 
-                <div className="card col-lg-6 animate__animated animate__slideInLeft">
-                    <div className="card-header">
-                        Our Mission
+                <div className="card col-lg-6" data-aos="fade-right">
+                    <div className="card-header card_header">
+                        <strong>Our Mission</strong>
                     </div>
                     <div className="card-body">
                         <h5 className="card-title">Special title treatment</h5>
@@ -26,9 +26,9 @@ function Our_misson_vision() {
                     </div>
                 </div>
 
-                <div className="card col-lg-6 animate__animated animate__slideInRight">
-                    <div className="card-header">
-                        Our Vision
+                <div className="card col-lg-6" data-aos="fade-left">
+                    <div className="card-header card_header">
+                        <strong>Our Vision</strong>
                     </div>
                     <div className="card-body">
                         <h5 className="card-title">Special title treatment</h5>

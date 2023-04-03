@@ -32,8 +32,18 @@ function Events() {
       <h1> Events</h1>
 
       <form class="form">
-          <input required="" autocomplete="off" placeholder="search" id="search" type="search" onChange={(e) => setSearch(e.target.value)} />
-      </form>
+                  <label for="search">
+                      <input required="" autocomplete="off" placeholder="Search" id="search" type="text" onChange={(e) => setSearch(e.target.value)} />
+                      <div class="icon">
+                          <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                          </svg>
+                          <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                              <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                          </svg>
+                      </div>
+                  </label>
+              </form>
 
       <div class="album py-5">
 

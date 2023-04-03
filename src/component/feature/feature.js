@@ -8,7 +8,7 @@ function Feature() {
             <div className="container px-4 py-5" id="custom-cards">
                 <h2 className="pb-2 border-bottom">Event Gallery</h2>
 
-                <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" data-aos="fade-down" data-aos-duration="5000">
 
                     <div className="col pb-4 margin-bottom">
                         <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" Style="background-image: linear-gradient(180deg, rgba(255 255 255 / 54%), rgba(0 0 150 / 69%)), url('https://res.cloudinary.com/priestlythedon/image/upload/v1677529906/cwoaa%20stock%20image/mbzs8mw0vbq2mh5hmysm.jpg');">

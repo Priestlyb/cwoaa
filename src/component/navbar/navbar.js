@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" id='navbar'>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" id='navbar' data-aos="zoom-in" data-aos-mirror="false">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">CWOAA <img src={logo} alt='logo' width="40px" /></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +30,23 @@ export default function Navbar() {
               <a className="nav-link" href="/prayer">Prayers</a>
             </li>
 
+            <li className="nav-item active">
+              <a className="nav-link" href="/book&mass">
+                <div class="nav_button">
+                  <div class="nav_box">B</div>
+                  <div class="nav_box">o</div>
+                  <div class="nav_box">o</div>
+                  <div class="nav_box">k</div>
+                </div>
+              </a>
+            </li>
+
             <li className="nav-item active dropdown">
               <span className="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Activities
               </span>
 
-              <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <ul className="dropdown-menu dropdown-menu-light animate__animated animate__bounceInDown animate__slow" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a className="dropdown-item" href="/news">News</a></li>
                 <li><a className="dropdown-item" href="/events">Events</a></li>
               </ul>
