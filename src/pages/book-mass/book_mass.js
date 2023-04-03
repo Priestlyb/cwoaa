@@ -19,7 +19,7 @@ function Bookmass() {
                     <strong>Bank: <span>Wema Bank</span></strong>
                     <strong>Account: <span>0434908920</span></strong>
 
-                    <div className='col-lg-6' data-aos="fade-up" data-aos-duration="1000">
+                    <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="1000">
                         <div class="bm_input-container">
                             <input class="bm_input" name="text" type="text" />
                             <label class="label" for="input">Family Name</label>
@@ -28,7 +28,7 @@ function Bookmass() {
                         </div>
                     </div>
 
-                    <div className='col-lg-6' data-aos="fade-up" data-aos-duration="900">
+                    <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="900">
                         <div class="bm_input-container">
                             <input class="bm_input" name="text" type="text" />
                             <label class="label" for="input">Email address</label>

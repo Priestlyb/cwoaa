@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "../../slider-data";
 import "./Slider.scss";
 
@@ -14,11 +13,6 @@ const Slider = () => {
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
     console.log("next");
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-    console.log("prev");
   };
 
   function auto() {

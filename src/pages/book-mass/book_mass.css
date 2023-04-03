@@ -10,12 +10,12 @@
 .bm_input {
     padding: 10px;
     width: 100%;
-    border: none;
+    border: solid 1;
     font-size: 16px;
     background: transparent;
     outline: none;
-    box-shadow: 7px 7px 0px 0px #0B2447;
-    transition: all 0.5s;
+    box-shadow: 2px 2px 0px 0px #0B2447;
+    transition: all 1s;
 }
 
 .bm_input:focus {
@@ -27,8 +27,8 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #0B2447;
-    transition: all 0.5s;
+    color: #000;
+    transition: all 1s;
     transform: scale(0);
     z-index: -1;
 }
@@ -46,7 +46,7 @@
 
 .bm_input-container input[type="text"]:focus~.topline {
     width: 35%;
-    transition: all 0.5s;
+    transition: all 2s;
 }
 
 .bm_input-container .underline {
@@ -61,12 +61,12 @@
 }
 
 .bm_input-container input[type="text"]:focus~.underline {
-    width: 100%;
-    transition: all 0.5s;
+    width: 80%;
+    transition: all 1s;
 }
 
 .bm_input-container input[type="text"]:focus~.label {
-    top: -10px;
+    top: -25px;
     transform: scale(1);
     transition: all 0.5s;
 }

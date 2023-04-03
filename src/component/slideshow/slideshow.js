@@ -7,7 +7,7 @@ function Slideshow() {
 
             <h1>Lastest News</h1>
 
-            <div className="col_items" data-aos="fade-in" data-aos-duration="5000">
+            <div className="col_items" data-aos="slide-left" data-aos-duration="800">
 
                 <div className="item">SCROLL SNAP</div>
                 <div className="item">SCROLL SNAP</div>
