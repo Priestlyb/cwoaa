@@ -19,38 +19,24 @@ function Bookmass() {
                     <strong>Bank: <span>Wema Bank</span></strong>
                     <strong>Account: <span>0434908920</span></strong>
 
+                    <div className='col-lg-6 mt-5' data-aos="fade-up" data-aos-duration="1000">
+
+                        <input type="text" name="text" class="input w-100" placeholder="Family name"></input>
+                    </div>
+
+                    <div className='col-lg-6 mt-5' data-aos="fade-up" data-aos-duration="1000">
+
+                        <input type="text" name="text" class="input w-100" placeholder="Email"></input>
+                    </div>
+
                     <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="1000">
-                        <div className="bm_input-container">
-                            <input className="bm_input" name="text" type="text" />
-                            <label className="label" for="input">Family Name</label>
-                            <div className="topline"></div>
-                            <div className="underline"></div>
-                        </div>
+
+                        <input type="datetime-local" id="check-out" name="check-out" min="2000-01-01T00:00" max="2500-06-14T00:00" className='input w-100'></input>
                     </div>
 
-                    <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="900">
-                        <div className="bm_input-container">
-                            <input className="bm_input" name="text" type="text" />
-                            <label className="label" for="input">Email address</label>
-                            <div className="topline"></div>
-                            <div className="underline"></div>
-                        </div>
-                    </div>
+                    <div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="1000">
 
-                    <div className='col-lg-6' data-aos="fade-up" data-aos-duration="800">
-                        <div className="bm_input-container">
-                            <input className="bm_input" name="text" type="datetime-local" min="2000-01-01T00:00" max="2500-06-14T00:00" />
-                            <label className="label" for="input">Date</label>
-                        </div>
-                    </div>
-
-                    <div className='col-lg-6' data-aos="fade-up" data-aos-duration="700">
-                        <div className="bm_input-container">
-                            <input className="bm_input" placeholder='Receipt' name="text" type="file" />
-                            <label className="label" for="input">Receipt</label>
-                            <div className="topline"></div>
-                            <div className="underline"></div>
-                        </div>
+                        <input type="file" name="text" class="input w-100"></input>
                     </div>
 
                     <div className='col-12' data-aos="fade-up" data-aos-duration="600">
@@ -73,7 +59,7 @@ function Bookmass() {
                 <div className='col-lg-6 bm_col_right' data-aos="zoom-in" data-aos-duration="900">
                     <Lottie animationData={groovyWalkAnimation} loop={true} />
                 </div>
-                
+
             </div>
         </div>
     )
