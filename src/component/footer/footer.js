@@ -30,7 +30,8 @@ function Footer() {
     </div>
     <div className="footer-section contact-form">
       <h2>Contact Us</h2>
-      <a className="btn email_btn" href="mailto:cwoaamedia@gmail.com">Email ME</a>
+      <a className="btn email_btn" href="mailto:cwoaamedia@gmail.com" data-aos="flip-up"
+    data-aos-easing="ease-in-out-quart">Email ME</a>
     </div>
   </div>
 

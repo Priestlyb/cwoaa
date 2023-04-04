@@ -27,7 +27,7 @@
 .subscribe input {
   margin-bottom: 2rem;
   border: none;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
   padding: 10px;
   width: 100%;
   background: transparent;
@@ -35,19 +35,24 @@
 }
 
 .subscribe input:focus {
+  box-shadow: 7px 7px 0px 0px #121435;
   outline: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 2px solid #333;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
 }
 
 .subscribe-textarea {
   margin-bottom: 2rem;
   border: none;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
   padding: 10px;
   width: 100%;
   background: transparent;
   transition: all .25s ease;
+}
+
+.subscribe-textarea:focus {
+  box-shadow: 7px 7px 0px 0px #121435;
 }
 
 .subscribe .submit-btn {

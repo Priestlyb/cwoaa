@@ -3,7 +3,9 @@ import EventBtn from '../pages/events/event_btn'
 import EventsAdd from '../pages/events/events_add'
 import Adminsingle from './admin-single';
 import { axiosInstance } from '../config';
-import "./admin.css"
+import "./admin.css";
+import Lottie from "lottie-react";
+import Search from "../pages/events/search.json";
 
 function Adminpage() {
 
@@ -48,43 +50,35 @@ function Adminpage() {
       ) : (
         <div className='container'>
 
-          <h1 className='db_header'>CWOAA Dashboard</h1>
+          <h1 className='db_header' data-aos="fade-down">CWOAA Dashboard</h1>
 
           <div className='row'>
 
-            <div className='row col-lg-6'>
-              <div className='col-12'>
+            <div className='row col-lg-6 p-4'>
+              
+              <div className='col-12' data-aos="fade-right">
                 <h1>Event Data</h1>
               </div>
 
-              <div className='col-lg-12'>
+              <div className='col-lg-12' data-aos="fade-left">
 
                 <EventBtn setClose={setClose} />
                 {!close && <EventsAdd setClose={setClose} />}
 
               </div>
 
-              <div className='col-lg-12'>
+              <div className='col-lg-12' data-aos="fade-right">
 
-                <form class="form">
-                  <label for="search">
-                    <input required="" autocomplete="off" placeholder="Search" id="search" type="text" onChange={(e) => setSearch(e.target.value)} />
-                    <div class="icon">
-                      <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
-                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
-                      </svg>
-                      <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
-                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
-                      </svg>
-                    </div>
-                  </label>
-                </form>
+                
+
+      <form class="form d-flex mt-4">
+
+<Lottie animationData={Search} loop={true} className='mr-2' />
+<input required="" autocomplete="off" placeholder="Search" id="search" type="text" onChange={(e) => setSearch(e.target.value)}  className='event_search' />
+
+</form>
 
               </div>
-
-              <div className='col-4'>Images</div>
-              <div className='col-4'>Titles</div>
-              <div className='col-4'>Description</div>
 
               {events && events
                 .filter((event) => {
@@ -93,7 +87,7 @@ function Adminpage() {
                   return searchTerm === '' ? event : eventsDesc.includes(searchTerm);
                 })
                 .map((event, id) => (
-                  <div className='row col-lg-13' key={id}>
+                  <div className='col-12 event_cover' key={id}>
                     <Adminsingle event={event} />
                   </div>
                 ))}
