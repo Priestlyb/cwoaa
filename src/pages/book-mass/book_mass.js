@@ -18,29 +18,35 @@ function Bookmass() {
 
                     <strong>Bank: <span>Wema Bank</span></strong>
                     <strong>Account: <span>0434908920</span></strong>
+                    
 
-                    <div className='col-lg-6 mt-5' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
+                    <div className='col-lg-6 mt-3' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
                         <label>Family name</label>
+                        <br />
                         <input type="text" name="text" className="input w-100"></input>
                     </div>
 
-<div className='col-lg-6 mt-5' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
+<div className='col-lg-6 mt-3' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
     <label>Email</label>
+                        <br />
     <input type="text" name="text" className="input w-100"></input>
 </div>
 
-<div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
+<div className='col-lg-6 mt-3' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
     <label>Date</label>
+                        <br />
     <input type="datetime-local" name="check-out" min="2000-01-01T00:00" max="2500-06-14T00:00" className="input w-100"></input>
 </div>
 
-<div className='col-lg-6 mt-2' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
+<div className='col-lg-6 mt-3' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
     <label>Reciept Please</label>
+                        <br />
     <input type="file" name="text" className="input w-100"></input>
 </div>
 
-<div className='col-12 mt-2' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
+<div className='col-12 mt-3' data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
     <label>Intentions</label>
+                        <br />
     <textarea type="text" className="input w-100 h-50"></textarea>
 </div>
 
