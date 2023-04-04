@@ -1,131 +1,124 @@
 .bm_col_right {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-.bm_input-container {
-    position: relative;
-    margin-top: 25px;
+.subscribe {
+  position: relative;
+  width: 500px;
+  padding: 20px 0;
+  color: #333;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
 }
 
-.bm_input {
-    padding: 10px;
-    width: 100%;
-    border: solid 2px;
-    font-size: 16px;
-    background: transparent;
-    outline: none;
-    box-shadow: 2px 2px 0px 0px #0B2447;
-    transition: all 1s;
+.subscribe:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  bottom: 18px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #23487f;
 }
 
-.bm_input:focus {
-    box-shadow: none;
-    transition: all 0.5s;
+.subscribe input {
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  width: 100%;
+  background: transparent;
+  transition: all .25s ease;
 }
 
-.label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #000;
-    transition: all 1s;
-    transform: scale(0);
-    z-index: -1;
+.subscribe input:focus {
+  outline: none;
+  border-bottom: 1px solid #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
 }
 
-.bm_input-container .topline {
-    position: absolute;
-    content: "";
-    background-color: #0B2447;
-    width: 0%;
-    height: 2px;
-    right: 0;
-    top: 0;
-    transition: all 0.5s;
+.subscribe-textarea {
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  width: 100%;
+  background: transparent;
+  transition: all .25s ease;
 }
 
-.bm_input-container input[type="text"]:focus~.topline {
-    width: 35%;
-    transition: all 2s;
-}
-
-.bm_input-container .underline {
-    position: absolute;
-    content: "";
-    background-color: #0B2447;
-    width: 0%;
-    height: 2px;
-    right: 0;
-    bottom: 0;
-    transition: all 0.5s;
-}
-
-.bm_input-container input[type="text"]:focus~.underline {
-    width: 80%;
-    transition: all 1s;
-}
-
-.bm_input-container input[type="text"]:focus~.label {
-    top: -25px;
-    transform: scale(1);
-    transition: all 0.5s;
-}
-
-.bm_btn_cover {
-    display: flex;
-    justify-content: flex-end;
+.subscribe .submit-btn {
+  position: absolute;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  color: #FFF;
+  padding: 0;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  right: -10px;
+  bottom: -50px;
+  cursor: pointer;
+  transition: all .25s ease;
 }
 
 .bm_btn {
-    margin: 25px 0;
-    width: 140px;
-    height: 50px;
-    background: linear-gradient(to top, #00154c, #12376e, #23487f);
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-  
-  .bm_btn span {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: top 0.5s;
-  }
-  
-  .bm_btn-text-one {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-  
-  .bm_btn-text-two {
-    position: absolute;
-    width: 100%;
-    top: 150%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-  
-  .bm_btn:hover .bm_btn-text-one {
-    top: -100%;
-  }
-  
-  .bm_btn:hover .bm_btn-text-two {
-    top: 50%;
+  margin: 25px 0;
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.bm_btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.bm_btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.bm_btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.bm_btn:hover .bm_btn-text-one {
+  top: -100%;
+}
+
+.bm_btn:hover .bm_btn-text-two {
+  top: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .bm_row {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  @media screen and (max-width: 1000px) {
-    .bm_row {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .subscribe {
+    width: 100%;
   }
-  
+}
