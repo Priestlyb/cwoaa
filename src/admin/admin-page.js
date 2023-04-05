@@ -60,12 +60,8 @@ function Adminpage() {
                 <h1>Event Data</h1>
               </div>
 
-              <div className='col-lg-12' data-aos="fade-left">
-
                 <EventBtn setClose={setClose} />
                 {!close && <EventsAdd setClose={setClose} />}
-
-              </div>
 
               <div className='col-lg-12' data-aos="fade-right">
 

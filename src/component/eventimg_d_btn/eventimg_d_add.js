@@ -48,13 +48,13 @@ const EventImgDataadd = ({ setClose, event }) => {
         <div className="">
             <div className="wrapper">
                 <div className="">
-                    <h1>Edit Event</h1>
+                    <h1>Edit Event Image</h1>
 
 
                     <div className="item">
                         <label className="label">Current Image</label>
                         {inputs.event_img && (
-                            <img src={inputs.event_img} alt="Current Event" className="eventImg" />
+                            <img src={inputs.event_img} alt="Current Event" className="eventImg w-50" />
                         )}
                     </div>
 
@@ -64,7 +64,7 @@ const EventImgDataadd = ({ setClose, event }) => {
                         <input type="file" className='' onChange={(e) => setFile(e.target.files[0])} />
                     </div>
 
-                    <button className="btn" onClick={handleSubmit}>
+                    <button className="btn mt-3 border bg-dark text-light" onClick={handleSubmit}>
                         Update
                     </button>
                 </div>

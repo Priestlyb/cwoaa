@@ -6,6 +6,10 @@
     background-color: black;
 }
 
+.event_title {
+  font-size: 24px;
+}
+
 .upload_img {
     width: 100%;
     aspect-ratio:  1/1;

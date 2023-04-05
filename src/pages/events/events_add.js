@@ -62,7 +62,7 @@ const EventsAdd = ({setClose}) => {
   };
 
   return (
-    <div className="event">
+    <div className="add_event_cover">
       <div className="wrapper">
         <span onClick={() => setClose(true)} className="close">
           X

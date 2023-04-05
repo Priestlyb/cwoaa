@@ -20,7 +20,7 @@ const Adminsingle = (props) => {
 
             <div className='col-lg-4 mt-3'>
                 <h6 className='fw-bold'>Titles:</h6>
-                <h2>{event_title}</h2>
+                <h2 className='event_title'>{event_title}</h2>
             </div>
 
             <div className='col-lg-4 mt-3 d-block justify-content-center align-items-center'>
