@@ -53,7 +53,7 @@ function News() {
             </div>
 
 
-            <div class="row g-5 mt-5">
+            <div class="news_row row g-5">
 
                 <div class="col-md-8">
                     <h3 class="pb-4 mb-4 fst-italic border-bottom">
@@ -92,14 +92,14 @@ function News() {
                 </div>
 
                 <div class="col-md-4">
-                    <div class="position-sticky" Style="top: 2rem;">
+                    <div class="position-sticky news_search">
 
-<form class="form d-flex mt-4 mb-4">
+                        <form class="form d-flex mt-4 mb-4">
 
-  <Lottie animationData={Search} loop={true} className='mr-2' />
-  <input required="" autocomplete="off" placeholder="Search" id="search" type="text"  className='event_search' />
+                            <Lottie animationData={Search} loop={true} className='mr-2' />
+                            <input required="" autocomplete="off" placeholder="Search" id="search" type="text" className='event_search' />
 
-</form>
+                        </form>
 
                         <div class="p-4 mb-3 bg-light rounded">
                             <h4 class="fst-italic">About</h4>

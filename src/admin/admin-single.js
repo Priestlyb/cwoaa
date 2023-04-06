@@ -18,12 +18,12 @@ const Adminsingle = (props) => {
         <div className='row event_row d-flex justify-content-center p-3 border' data-aos="fade-up">
             {/* events */}
 
-            <div className='col-lg-4 mt-3'>
+            <div className='col-12 mt-3'>
                 <h6 className='fw-bold'>Titles:</h6>
                 <h2 className='event_title'>{event_title}</h2>
             </div>
 
-            <div className='col-lg-4 mt-3 d-block justify-content-center align-items-center'>
+            <div className='col-12 mt-3 d-block justify-content-center align-items-center'>
                 <h6 className='fw-bold'>Image:</h6>
                 <img src={event_img} alt='' className='upload_img' />
                 <a href={`/eventimgdataadd/${_id}`} className='edit_icon' >
@@ -31,7 +31,7 @@ const Adminsingle = (props) => {
                 </a>
             </div>
 
-            <div className='col-lg-4 mt-3'>
+            <div className='col-12 mt-3'>
 
                 <h6 className='fw-bold'>Description:</h6>
                 {event_desc.slice(0, 25)}. . .

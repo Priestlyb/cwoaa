@@ -1,4 +1,4 @@
-import React, { useContext, useEffect }  from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "./component/layout";
 import Navbar from "./component/navbar/navbar";
@@ -19,8 +19,8 @@ import Aos from "aos"
 import Bookmass from "./pages/book-mass/book_mass";
 
 function App() {
-  
-  useEffect (() => {
+
+  useEffect(() => {
     Aos.init({
       duration: 900,
       delay: 100,
@@ -30,24 +30,26 @@ function App() {
   const { user } = useContext(Context);
   return (
     <>
-      < Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' exact element={<Layout />} />
-          <Route path="/admin" element={user ? <AdminPage /> : <Login />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/book&mass" element={<Bookmass />} />
-          <Route path="/prayer" element={<Prayer />} />
-          <Route path="/eventsinglepage/:id" element={<EventSinglePage />} />
-          <Route path="/events" element={<Event />} />
-          <Route path='/updateevent/:id' element={<EventsEdit />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/eventimgdataadd/:id" element={<EventImgDataadd />} />
-          <Route path="/eventadd" element={<EventsAdd />} />
-        </Routes>
-        <Footer />
-        <Quickcontact />
-      </Router>
+
+        < Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' exact element={<Layout />} />
+            <Route path="/admin" element={user ? <AdminPage /> : <Login />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/book&mass" element={<Bookmass />} />
+            <Route path="/prayer" element={<Prayer />} />
+            <Route path="/eventsinglepage/:id" element={<EventSinglePage />} />
+            <Route path="/events" element={<Event />} />
+            <Route path='/updateevent/:id' element={<EventsEdit />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/eventimgdataadd/:id" element={<EventImgDataadd />} />
+            <Route path="/eventadd" element={<EventsAdd />} />
+          </Routes>
+          <Footer />
+          <Quickcontact />
+        </Router>
+
     </>
   );
 }

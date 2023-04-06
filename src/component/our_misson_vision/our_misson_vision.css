@@ -4,6 +4,17 @@
     justify-content: center;
 }
 
+.vision {
+    overflow-y: auto;
+}
+
 .card_header {
     font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .vision {
+        margin-top: 50px;
+
+    }
 }

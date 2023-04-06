@@ -12,7 +12,7 @@ function Adminpage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 3000);
+    setTimeout(() => setIsLoading(false), 8000);
   }, []);
 
   //Axios Request
@@ -36,43 +36,65 @@ function Adminpage() {
   return (
     <>
       {isLoading ? (
-        <div class="loading">
-          <span class="l">L</span>
-          <span class="o">o</span>
-          <span class="a">a</span>
-          <span class="d">d</span>
-          <span class="i">i</span>
-          <span class="n">n</span>
-          <span class="g">g</span>
-          <span class="d1">.</span>
-          <span class="d2">.</span>
+        <div className="loading">
+          <h1 className="l">L</h1>
+          <h1 className="o">o</h1>
+          <h1 className="a">a</h1>
+          <h1 className="d">d</h1>
+          <h1 className="i">i</h1>
+          <h1 className="n">n</h1>
+          <h1 className="g">g</h1>
+          <h1 className="d1">.</h1>
+          <h1 className="d2">.</h1>
         </div>
       ) : (
         <div className='container'>
+
+          {/* Admin hamburger */}
+
+            <button className="hamburger_cover btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              <i className="fa-brands fa-ioxhost"></i>
+            </button>
+
+          <div className='hamburger_cover_item' Style="min-height: 120px;">
+            <div className="collapse collapse-horizontal" id="collapseWidthExample">
+              <div className="card card-body" Style="width: 150px;">
+                <a href='#events' className='p-2 text-dark'>
+                  Event
+                </a>
+                <a href='#events' className='p-2 text-dark'>
+                  News
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          {/* End Admin hamburger */}
 
           <h1 className='db_header' data-aos="fade-down">CWOAA Dashboard</h1>
 
           <div className='row'>
 
-            <div className='row col-lg-6 p-4'>
-              
-              <div className='col-12' data-aos="fade-right">
+            <div className='row col-12 p-4'>
+
+              <div className='col-12 pt-5' id='events' data-aos="fade-right">
                 <h1>Event Data</h1>
               </div>
 
-                <EventBtn setClose={setClose} />
-                {!close && <EventsAdd setClose={setClose} />}
+              <EventBtn setClose={setClose} />
+              {!close && <EventsAdd setClose={setClose} />}
 
               <div className='col-lg-12' data-aos="fade-right">
 
-                
 
-      <form class="form d-flex mt-4">
 
-<Lottie animationData={Search} loop={true} className='mr-2' />
-<input required="" autocomplete="off" placeholder="Search" id="search" type="text" onChange={(e) => setSearch(e.target.value)}  className='event_search' />
+                <form className="form d-flex mt-4">
 
-</form>
+                  <Lottie animationData={Search} loop={true} className='mr-2' />
+                  <input required="" autocomplete="off" placeholder="Search" id="search" type="text" onChange={(e) => setSearch(e.target.value)} className='event_search' />
+
+                </form>
 
               </div>
 
@@ -83,7 +105,7 @@ function Adminpage() {
                   return searchTerm === '' ? event : eventsDesc.includes(searchTerm);
                 })
                 .map((event, id) => (
-                  <div className='col-12 event_cover' key={id}>
+                  <div className='col-lg-3 col-md-4 w-5 event_cover' key={id}>
                     <Adminsingle event={event} />
                   </div>
                 ))}
@@ -91,7 +113,7 @@ function Adminpage() {
 
             {/* End of Event Data */}
 
-            <div className='row col-lg-6'>
+            <div className='row col-12'>
               <div className='col-12'>
                 <h1 className='mt-5'>News Data</h1>
               </div>

@@ -8,7 +8,7 @@ const Anthem = () => {
 
       <div className="container row col_anthem">
 
-        <div className="pricing-column col-lg-3 col-md-3" data-aos="fade-left" data-aos-delay="800">
+        <div className="pricing-column col-lg-3 col-md-3" data-aos="fade-down" data-aos-delay="800">
         <div className="card">
           <div className="card-header">
             <strong>CWOAA Anthem</strong>
@@ -16,7 +16,7 @@ const Anthem = () => {
         </div>
       </div>
 
-      <div className="pricing-column col-lg-9 col-md-9" data-aos="fade-left">
+      <div className="pricing-column col-lg-9 col-md-9" data-aos="fade-up">
         <div className="card">
           <div className="card-body">
             <p className='reason-p women_anthem'>

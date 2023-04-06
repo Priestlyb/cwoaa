@@ -4,3 +4,23 @@ hr {
     margin-bottom: 50px;
     background-color: black;
 }
+
+.news_row {
+    display: flex;
+    margin-top: 50px;
+}
+
+.news_search {
+    top: 2rem;
+}
+
+@media screen and (max-width: 1020px) {
+    .news_row {
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .news_search {
+        top: 0.5rem;
+    }
+}
