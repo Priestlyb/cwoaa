@@ -7,12 +7,14 @@ function Our_misson_vision() {
         <div className='container py-1'>
             <div className='row'>
                 
-                <div className="card col-12 my-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <div className="col-12 my-5 wwa" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div className='card'>
                     <div className="card-header card_header">
                     <strong>Who We Are</strong>
                     </div>
                     <div className="card-body">
                         <p className="card-title">The Catholic Women Organization Abuja Archdiocese, CWOAA, was formed when Abuja was a independent Mission in 1984, During the launch of the Missionary Society of St. Paul Seminary Gwagwalada under the Leadership of Chief Mrs. V. V. I. Okoye, the then NCCWO President. The Independent Mission had late Cardinal Dominic Ekandem as the Ecclesiastical Superior and later Bishop.</p>
+                    </div>
                     </div>
                 </div>
 

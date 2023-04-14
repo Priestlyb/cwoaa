@@ -23,7 +23,7 @@ function Bookmass() {
                     <div className='col-lg-6 mt-3'>
 
                         <div class="subscribe">
-                            <input placeholder="Family name" class="subscribe-input" name="Family name" type="text" data-aos="fade-up" data-aos-duration="600" data-aos-delay="2" />
+                            <input placeholder="Name" class="subscribe-input" name="Family name" type="text" data-aos="fade-up" data-aos-duration="600" data-aos-delay="2" />
                             <input placeholder="Your e-mail" class="subscribe-input" name="email" type="email" data-aos="fade-up" data-aos-duration="600" data-aos-delay="3" />
                             <div>
                             <label>Date For Mass</label>
@@ -33,7 +33,7 @@ function Bookmass() {
                             <label>Upload Receipt</label>
                             <input accept=".jpg, .jpeg, .png, .gif, .pdf" class="subscribe-input" name="arquivo" type="file" data-aos="fade-up" data-aos-duration="800" data-aos-delay="5" />
                             </div>
-                            <textarea placeholder="Write your Intention" class="subscribe-textarea" name="email" type="email" data-aos="fade-up" data-aos-duration="800" data-aos-delay="3" />
+                            <textarea placeholder="Mass Intention" class="subscribe-textarea" name="email" type="email" data-aos="fade-up" data-aos-duration="800" data-aos-delay="3" />
                             <div class="submit-btn" data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
                                 <button className="bm_btn">
                                     <span className="bm_btn-text-one">Book now</span>

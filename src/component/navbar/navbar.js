@@ -32,12 +32,7 @@ export default function Navbar() {
 
             <li className="nav-item active">
               <a className="nav-link" href="/book&mass">
-                <div class="nav_button">
-                  <div class="nav_box">B</div>
-                  <div class="nav_box">o</div>
-                  <div class="nav_box">o</div>
-                  <div class="nav_box">k</div>
-                </div>
+                Mass Booking
               </a>
             </li>
 

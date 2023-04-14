@@ -17,4 +17,10 @@
         margin-top: 50px;
 
     }
+
+    .wwa {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
 }
