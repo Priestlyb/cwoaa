@@ -165,6 +165,15 @@
     text-shadow: 2px 2px 3px #919191;
   }
   
+  .d3 {
+    color: black;
+    opacity: 0;
+    animation: pass1 2s ease-in-out infinite;
+    animation-delay: 2s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
   @keyframes pass {
     0% {
       opacity: 1;
