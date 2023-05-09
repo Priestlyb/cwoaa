@@ -16,6 +16,16 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem("user", JSON.stringify(state.user));
   }, [state.user]);
 
+  useEffect(() => {
+    const logoutTimer = setTimeout(() => {
+      dispatch({ type: "LOGOUT" });
+    }, 600000); // Adjust the session duration (in milliseconds) as per your requirements
+
+    return () => {
+      clearTimeout(logoutTimer);
+    };
+  }, [state.user]);
+
   return (
     <Context.Provider
       value={{

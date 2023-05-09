@@ -46,6 +46,7 @@ function Adminpage() {
           <h1 className="g">g</h1>
           <h1 className="d1">.</h1>
           <h1 className="d2">.</h1>
+          <h1 className="d3">.</h1>
         </div>
       ) : (
         <div className='container'>

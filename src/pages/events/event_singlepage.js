@@ -28,7 +28,7 @@ const EventSinglePage = () => {
 
                 <div className="col-md-5">
 
-                    < img src="http://res.cloudinary.com/priestlythedon/image/upload/v1678626084/cwoaauploads/kc8dtd9o6himziyloqj3.jpg" alt='' width="100%" height="100%" className="bd-img-img-lg featurette-image img-fluid mx-a/u" />
+                    < img src={event.event_img} alt='' width="100%" className="eventsinglepage_img bd-img-img-lg featurette-image img-fluid mx-a/u" />
 
                 </div>
 
