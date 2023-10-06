@@ -27,7 +27,7 @@ export default function Navbar() {
               <a className="nav-link" href="/about">About</a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/prayer">Prayers</a>
+              <a className="nav-link" href="/prayers">Prayers</a>
             </li>
 
             <li className="nav-item active">
@@ -50,7 +50,7 @@ export default function Navbar() {
 
             <li className="nav-item active">
               <div className="nav_icon nav-link active">
-                <a href='https://www.tiktok.com/@huntamazonfinds' target='blank' className='tiktok_icon'><i className="fab fa-facebook"></i></a>  <a href='https://www.instagram.com/huntamazonfinds/' target='blank' className='instagram_icon'><i className="fab fa-instagram"></i></a>
+                <a href='https://www.facebook.com' target='blank'><i className="facebook_icon fab fa-facebook"></i></a>  <a href='https://www.instagram.com' target='blank'><i className="instagram_icon fab fa-instagram"></i></a>
               </div>
             </li>
 

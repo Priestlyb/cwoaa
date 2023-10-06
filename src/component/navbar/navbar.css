@@ -82,6 +82,14 @@
   transform: translateY(0);
 }
 
+.facebook_icon {
+  color: #185ABD;
+}
+
+.instagram_icon {
+  color: #d62976;
+}
+
 @media (max-width: 991.98px) {
   .navbar-nav {
     margin-top: 0.5rem;

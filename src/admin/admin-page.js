@@ -16,7 +16,7 @@ function Adminpage() {
   }, []);
 
   //Axios Request
-  const URL = "/events";
+  const URL = "http://localhost:9000/events";
   const fetchHandler = async () => {
     return await axiosInstance.get(URL).then((res) => res.data)
   }
@@ -53,9 +53,9 @@ function Adminpage() {
 
           {/* Admin hamburger */}
 
-            <button className="hamburger_cover btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-              <i className="fa-brands fa-ioxhost"></i>
-            </button>
+          <button className="hamburger_cover btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <i className="fa-brands fa-ioxhost"></i>
+          </button>
 
           <div className='hamburger_cover_item' Style="min-height: 120px;">
             <div className="collapse collapse-horizontal" id="collapseWidthExample">

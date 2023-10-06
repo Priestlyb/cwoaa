@@ -38,7 +38,7 @@ function App() {
             <Route path="/admin" element={user ? <AdminPage /> : <Login />} />
             <Route path="/about" element={<About />} />
             <Route path="/book&mass" element={<Bookmass />} />
-            <Route path="/prayer" element={<Prayer />} />
+            <Route path="/prayers" element={<Prayer />} />
             <Route path="/eventsinglepage/:id" element={<EventSinglePage />} />
             <Route path="/events" element={<Event />} />
             <Route path='/updateevent/:id' element={<EventsEdit />} />

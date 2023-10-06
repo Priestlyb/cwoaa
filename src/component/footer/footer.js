@@ -1,6 +1,6 @@
 import React from 'react'
 import "./footer.css"
-import logo from "./logo.png"
+import logo from "./logo.svg"
 
 function Footer() {
   return (
@@ -8,15 +8,14 @@ function Footer() {
   <div className="footer-content">
     <div className="footer-section about">
       <img className="logo" src={logo} alt='logo' width="75px"/>
-      <h2>Our Mission and Vision</h2>
+      <h2>Our Motto:</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec est
-        quis justo pretium fermentum. Aliquam erat volutpat. Sed eu nulla quis
-        nibh tincidunt ullamcorper.
+      The motto of the CWOAA follows that of CWON: <br />
+      <strong>Love, Light, Unity and Peace.</strong>
       </p>
       <div className="socials">
-        <a href="https://web.facebook.com/cwonigeria" target='blank'><i className="fab fa-facebook"></i></a>
-        <a href="/" target='blank'><i className="fab fa-instagram"></i></a>
+        <a href="https://web.facebook.com/cwonigeria" target='blank'><i className="facebook fab fa-facebook"></i></a>
+        <a href="/" target='blank'><i className="instagram fab fa-instagram"></i></a>
       </div>
     </div>
     <div className="footer-section links">
@@ -24,7 +23,7 @@ function Footer() {
       <ul className='mt-4'>
         <li><a href="/news">News</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/prayer">Prayer</a></li>
+        <li><a href="/prayers">Prayers</a></li>
         <li><a href="/events">Events</a></li>
       </ul>
     </div>

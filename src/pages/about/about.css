@@ -1,5 +1,9 @@
 /* stylelint-disable selector-list-comma-newline-after */
 
+.about_banner {
+  background-color: #07176C;
+}
+
 .blog-header {
     border-bottom: 1px solid #e5e5e5;
   }

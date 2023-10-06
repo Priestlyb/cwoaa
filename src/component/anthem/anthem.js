@@ -8,7 +8,7 @@ const Anthem = () => {
 
       <div className="container row col_anthem">
 
-        <div className="pricing-column col-lg-3 col-md-3" data-aos="fade-down" data-aos-delay="800">
+        <div className=" col-lg-3 col-md-3">
         <div className="card">
           <div className="card-header">
             <strong>CWOAA Anthem</strong>
@@ -16,7 +16,7 @@ const Anthem = () => {
         </div>
       </div>
 
-      <div className="pricing-column col-lg-9 col-md-9" data-aos="fade-up">
+      <div className=" col-lg-9 col-md-9">
         <div className="card">
           <div className="card-body">
             <p className='reason-p women_anthem'>
@@ -24,7 +24,7 @@ const Anthem = () => {
             <br />
             All around the world
             <br />
-            women are longing in the shadows
+            women are longing to be free
             <br />
             no longer in the shadows
             <br />
@@ -33,29 +33,29 @@ const Anthem = () => {
             but side by side in true equality
             <br />
             <br />
-            Refrain
+            <strong>Chorus</strong>
             <br />
-            So sing a song for women everywhere
             <br />
-            let it ring around the world and never, never cease,
+            Oh sing a song for women everywhere
             <br />
-            So sing a song for women everywhere
+            let it ring around the world
+            <br />
+            and never, never cease,
+            <br />
+            So sing a song, for women everywhere
             <br />
             equality, development and peace
             <br />
             <br />
-            women can't be silent
+            women can't be silent when all
             <br />
-            when around the world
+            around the world
             <br />
-            people hurt abd hungry childern cry
+            people and hurt and hungry childern cry
             <br />
-            we'll sing out now for justice and development
+            we'll sing out for justice and development
             <br />
-            and hold the rights of all the people high
-            <br />
-            <br />
-            Refrain
+            and hold the rights of all the people high <strong>Chorus</strong>
             <br />
             <br />
             Women now are working to build a better world
@@ -64,10 +64,7 @@ const Anthem = () => {
             <br />
             where men lay down thier weapons and learn to love and share
             <br />
-            and people work to bring an end to war
-            <br />
-            <br />
-            refrain
+            and people work to bring an end to war <strong>Chorus</strong>
             </p>
           </div>
         </div>

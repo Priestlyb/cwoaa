@@ -17,13 +17,11 @@
   color: #000;
   width: 100%;
   height: 254px;
-  margin-bottom: 50px;
-  background-color: white;
 }
 
 .col_items .item {
   flex: 0 0 30%;
-  background: #539165;
+  background: #07176C;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -7,7 +7,7 @@ function Our_misson_vision() {
         <div className='container py-1'>
             <div className='row'>
                 
-                <div className="col-12 my-5 wwa" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <div className="col-12 my-5 wwa">
                     <div className='card'>
                     <div className="card-header card_header">
                     <strong>Who We Are</strong>
@@ -19,7 +19,7 @@ function Our_misson_vision() {
                 </div>
 
                 <div className="col-lg-6 mission">
-                <div className='card' data-aos="fade-right">
+                <div className='card'>
                     <div className="card-header card_header">
                         <strong>Our Mission</strong>
                     </div>
@@ -30,7 +30,7 @@ function Our_misson_vision() {
                 </div>
 
                 <div className="col-lg-6 vision">
-                <div className='card' data-aos="fade-left">
+                <div className='card'>
                     <div className="card-header card_header">
                         <strong>Our Vision</strong>
                     </div>

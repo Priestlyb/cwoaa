@@ -15,9 +15,10 @@ function Bookmass() {
                     <h1 className='fw-bold'>Book Mass</h1>
 
                     <p>Please make your payment to the below account and upload your Receipt, thank you for compliance.</p>
-
-                    <strong>Bank: <span>Wema Bank</span></strong>
-                    <strong>Account: <span>0434908920</span></strong>
+                    
+                    <strong>Bank: <span>FIDELITY BANK</span></strong>
+                    <strong>Account: <span>6060118805</span></strong>
+                    <strong>Account Name: <span>ABUJA ARCHDIOCESAN CATHOLIC WOMEN ORGANISATION</span></strong>
 
 
                     <div className='col-lg-6 mt-3'>
@@ -33,8 +34,8 @@ function Bookmass() {
                             <label>Upload Receipt</label>
                             <input accept=".jpg, .jpeg, .png, .gif, .pdf" class="subscribe-input" name="arquivo" type="file" data-aos="fade-up" data-aos-duration="800" data-aos-delay="5" />
                             </div>
-                            <textarea placeholder="Mass Intention" class="subscribe-textarea" name="email" type="email" data-aos="fade-up" data-aos-duration="800" data-aos-delay="3" />
-                            <div class="submit-btn" data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
+                            <textarea placeholder="Mass Intention" className="subscribe-textarea" name="email" type="email" data-aos="fade-up" data-aos-duration="800" data-aos-delay="3" />
+                            <div className="submit-btn" data-aos="fade-up" data-aos-duration="900" data-aos-delay="2">
                                 <button className="bm_btn">
                                     <span className="bm_btn-text-one">Book now</span>
                                     <span className="bm_btn-text-two">Great!</span>

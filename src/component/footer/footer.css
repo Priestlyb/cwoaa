@@ -29,13 +29,16 @@
   }
   
   .socials a {
-    color: #000;
     font-size: 1.5rem;
     margin-right: 10px;
   }
-  
-  .socials a:hover {
-    color: #FEA82F;
+
+  .facebook {
+    color: #185ABD;
+  }
+
+  .instagram {
+    color: #d62976;
   }
   
   .links ul {
@@ -122,7 +125,7 @@
   align-items: center;
   color: #fff;
   padding: 5px 15px;
-  background-color: #333;
+  background-color: #77140F;
 }
   
   /* Media Queries */

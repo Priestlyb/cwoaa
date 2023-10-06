@@ -66,10 +66,10 @@
 .mainEvent_btn {
   padding: 10px;
   margin: 20px 0;
-  background-color: #2E3840;
+  background-color: #DBB237;
   width: 150px;
   border-radius: 10px;
-  color: white;
+  color: #26201E;
   font-weight: 500;
   text-align: center;
   cursor: pointer;
@@ -167,6 +167,10 @@
 
 .eventImg {
   width: 20%;
+}
+
+.image-preview {
+  display: flex;
 }
 
 /* Input */
