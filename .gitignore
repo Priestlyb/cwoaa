@@ -6,3 +6,11 @@ build/
 
 # Ignore log files
 *.log
+
+# Ignore environment variable files
+.env
+
+# ignore Folders
+register/
+src/pages/news/Img/
+src/pages/prayer/img/

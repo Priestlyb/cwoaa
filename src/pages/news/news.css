@@ -18,6 +18,29 @@ hr {
     top: 2rem;
 }
 
+.preview-img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .preview-img-small {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .writer-preview,
+  .detail-preview {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+
 @media screen and (max-width: 1020px) {
     .news_row {
         margin-top: 10px;

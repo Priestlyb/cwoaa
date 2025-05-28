@@ -1,25 +1,40 @@
-import React from 'react'
-import "./slideshow.css"
+import React from "react";
+import "./slideshow.css";
 
-function Slideshow() {
-    return (
-        <div className="col_box">
+function Slideshow({ newsList = [] }) {
+  if (!Array.isArray(newsList) || newsList.length === 0) return null;
 
-            <h1>Lastest News</h1>
+  const truncateText = (text, length = 100) => {
+    if (!text || typeof text !== "string") return "";
+    return text.length > length ? text.slice(0, length) + "..." : text;
+  };
 
-            <div className="col_items">
+  return (
+    <section className="news-section">
+      <h2 className="section-title">Latest News</h2>
+      <div className="news-slider">
+        <div className="news-track">
+          {newsList.map((news, index) => {
+            const { _id, news_img = [], news_title = "", news_details = [] } = news;
+            const image = news_img[0]?.url || "/no-image.jpg";
 
-                <div className="item" data-aos="slide-left" data-aos-duration="300" data-delay="1">SCROLL SNAP</div>
-                <div className="item" data-aos="slide-left" data-aos-duration="400" data-delay="2">SCROLL SNAP</div>
-                <div className="item" data-aos="slide-left" data-aos-duration="500" data-delay="3">SCROLL SNAP</div>
-                <div className="item" data-aos="slide-left" data-aos-duration="600" data-delay="4">SCROLL SNAP</div>
-                <div className="item" data-aos="slide-left" data-aos-duration="700" data-delay="5">SCROLL SNAP</div>
-                <div className="item" data-aos="slide-left" data-aos-duration="800" data-delay="6">SCROLL SNAP</div>
-
-            </div>
-
+            return (
+              <div className="news-card" key={index}>
+                <img src={image} alt="News" className="news-image" />
+                <div className="news-content">
+                  <h3 className="news-title">{news_title}</h3>
+                  <p className="news-snippet">
+                    {truncateText(news_details?.[0]?.details)}
+                  </p>
+                  <a className="readmo" href={`/news/${_id}`}>Read more...</a>
+                </div>
+              </div>
+            );
+          })}
         </div>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Slideshow
+export default Slideshow;

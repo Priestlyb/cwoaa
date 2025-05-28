@@ -1,6 +1,6 @@
-const EventBtn = ({ setClose }) => {
+const EventBtn = ({ setCloseAddEvent }) => {
   return (
-    <div onClick={() => setClose(false)} className="mainEvent_btn row">
+    <div onClick={() => setCloseAddEvent(false)} className="mainEvent_btn row">
       Add New Event
     </div>
   );

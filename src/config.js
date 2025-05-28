@@ -1,5 +1,9 @@
-import axios from "axios"
+import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "https://cowaa.adaptable.app/"
-})
+  baseURL: "http://localhost:9000",
+  withCredentials: true,
+});
+
+
+// http://localhost:9000/

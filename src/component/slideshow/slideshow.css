@@ -1,46 +1,93 @@
-.col_box {
-  margin: 25px;
-  text-align: center;
-  margin-top: 50px;
+.news-section {
+  padding: 2rem 3rem;
+  background: #f9f9f9;
+  overflow: hidden;
 }
 
-.col_box h1 {
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+.section-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-family: 'Georgia', serif;
 }
 
-.col_items {
-  display: flex;
-  overflow-y: auto;
-  gap: 10px;
-  color: #000;
+.news-slider {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 254px;
 }
 
-.col_items .item {
-  flex: 0 0 30%;
-  background: #07176C;
+.news-track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.3rem;
-  line-height: 1.3em;
-  font-weight: 500;
-  font-family: sans-serif;
-  border-radius: .2rem;
+  gap: 1.5rem;
+  animation: scroll 25s linear infinite;
+  width: max-content;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.news-card {
+  flex: 0 0 auto;
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-left: 3rem;
+  transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 1000px) {
+.news-card:hover {
+  transform: scale(1.02);
+}
 
-  .col_items .item {
-    flex: 0 0 100%;
+.news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 1rem;
+}
+
+.news-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.news-snippet {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.news-slider:hover .news-track {
+  animation-play-state: paused;
+}
+
+.readmo {
+  text-decoration: none;
+  color: #07176C;
+  font-size: large;
+}
+
+/* Auto-scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-card {
+    width: 250px;
   }
 
+  .news-image {
+    height: 160px;
+  }
 }

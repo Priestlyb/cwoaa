@@ -1,6 +1,7 @@
 import { useState, useContext, useRef} from 'react'
 import { Context } from "../../context/Context";
 import "./Login.css";
+import { Link } from "react-router-dom";  
 import { axiosInstance } from '../../config';
 
 export default function Login() {
@@ -12,7 +13,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axiosInstance.post("/api/auth/login/", {
+      const res = await axiosInstance.post("/auth/login/", {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       });
@@ -68,11 +69,11 @@ export default function Login() {
           Login
         </button>
       </form>
-      {/* <button className="registerButton">
+       <button className="registerButton">
         <Link className="link" to="/register">
           Register
         </Link>
-      </button> */}
+      </button>
     </div>
   );
 }

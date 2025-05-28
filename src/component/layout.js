@@ -1,20 +1,31 @@
 import React, { useEffect, useState } from "react";
-import Anthem from './anthem/anthem'
-import Feature from './feature/feature'
-import OurMissonVision from './our_misson_vision/our_misson_vision'
-import Slider from './slider/Slider'
-import Slideshow from './slideshow/slideshow'
+import { axiosInstance } from "../config";
+import Anthem from "./anthem/anthem";
+import Feature from "./feature/feature";
+import OurMissonVision from "./our_misson_vision/our_misson_vision";
+import Slider from "./slider/Slider";
+import Slideshow from "./slideshow/slideshow";
 
 function Layout() {
   const [isLoading, setIsLoading] = useState(true);
+  const [news, setNews] = useState([]);
+
+  // Fetch News from the server
+  const fetchNewsHandler = async () => {
+    try {
+      const res = await axiosInstance.get("/news");
+      setNews(res.data.news);
+    } catch (error) {
+      console.error("Failed to fetch News:", error);
+    }
+  };
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 3000);
+    fetchNewsHandler().finally(() => setIsLoading(false));
   }, []);
 
   return (
     <div>
-
       {isLoading ? (
         <div className="app_loading">
           <div className="holder">
@@ -25,23 +36,28 @@ function Layout() {
               <div className="flame"></div>
             </div>
           </div>
-
         </div>
       ) : (
         <div>
-
           <Slider />
           <OurMissonVision />
-          <Slideshow />
+
+          {news.length === 0 ? (
+            <div className="col-12">
+              <p>No news found for your search</p>
+            </div>
+          ) : (
+            <div className="col-12">
+              <Slideshow newsList={news} />
+            </div>
+          )}
+
           <Anthem />
           <Feature />
-
         </div>
-
       )}
-
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

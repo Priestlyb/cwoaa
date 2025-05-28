@@ -59,6 +59,14 @@
     cursor: pointer;
     background-color: #373e98;
 }
+.link {
+    color: #fee36e;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
 
 .password-input-wrapper {
     padding: 10px;
