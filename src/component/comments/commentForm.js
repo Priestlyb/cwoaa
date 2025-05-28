@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../config";
 
 export default function NewCommentForm({ newsId, onCommentAdd }) {
   const [author, setAuthor] = useState("");
@@ -9,7 +9,7 @@ export default function NewCommentForm({ newsId, onCommentAdd }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`/comments/${newsId}`, {
+      const res = await axiosInstance.post(`/comments/${newsId}`, {
         content,
         author,
         passcode,
