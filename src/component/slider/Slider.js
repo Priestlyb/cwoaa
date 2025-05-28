@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../config";
 import "./Slider.scss";
 
 const Slider = () => {
@@ -26,7 +26,7 @@ const Slider = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const res = await axios.get("/events");
+        const res = await axiosInstance.get("/events");
         setEvents(res.data.events || []);
       } catch (err) {
         console.error("Failed to fetch events", err);
