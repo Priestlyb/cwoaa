@@ -69,11 +69,11 @@ export default function Login() {
           Login
         </button>
       </form>
-       <button className="registerButton">
+       {/* <button className="registerButton">
         <Link className="link" to="/register">
           Register
         </Link>
-      </button>
+      </button> */}
     </div>
   );
 }
