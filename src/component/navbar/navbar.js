@@ -88,9 +88,9 @@ export default function Navbar() {
               {user && "Admin"}
             </a>
 
-            <a href="/register" className="nav-item active  nav-link">
+            {/* <a href="/register" className="nav-item active  nav-link">
               {user && "Register"}
-            </a>
+            </a> */}
 
             <li className="nav-item active  nav-link" onClick={handleLogout}>
               {user && "Logout"}
