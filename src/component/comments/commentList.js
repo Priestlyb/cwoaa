@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../config";
 
 // Comment Component
 function Comment({ comment, onReply, onDelete }) {
@@ -33,7 +33,7 @@ function CommentForm({ newsId, parentId, onCommentAdd }) {
     e.preventDefault();
     if (!form.content || !form.author || !form.passcode) return alert("All fields required");
     try {
-      const res = await axios.post(`/comments/${newsId}`, { ...form, parentId });
+      const res = await axiosInstance.post(`/comments/${newsId}`, { ...form, parentId });
       onCommentAdd(res.data.comment);
       setForm({ content: "", author: "", passcode: "" });
     } catch (err) {
@@ -77,7 +77,7 @@ function CommentsList({ newsId }) {
 
   // Load comments
   useEffect(() => {
-    axios.get(`/comments/news/${newsId}`).then((res) => setComments(res.data.comments));
+    axiosInstance.get(`/comments/news/${newsId}`).then((res) => setComments(res.data.comments));
   }, [newsId]);
 
   // Add new comment/reply
@@ -85,7 +85,7 @@ function CommentsList({ newsId }) {
     setComments((prev) => [...prev, newComment]);
     setReplyTo(null);
     // Refresh the tree (optional, but ensures latest data)
-    axios.get(`/comments/news/${newsId}`).then((res) => setComments(res.data.comments));
+    axiosInstance.get(`/comments/news/${newsId}`).then((res) => setComments(res.data.comments));
   };
 
   // Delete comment
@@ -94,9 +94,9 @@ function CommentsList({ newsId }) {
     if (!passcode) return;
 
     try {
-      await axios.delete(`/comments/${commentId}`, { data: { passcode } });
+      await axiosInstance.delete(`/comments/${commentId}`, { data: { passcode } });
       alert("Comment deleted");
-      axios.get(`/comments/news/${newsId}`).then((res) => setComments(res.data.comments));
+      axiosInstance.get(`/comments/news/${newsId}`).then((res) => setComments(res.data.comments));
     } catch (err) {
       alert("Failed to delete comment: " + (err.response?.data?.message || "Error"));
     }
