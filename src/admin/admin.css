@@ -31,15 +31,13 @@
 }
 
 .event_cover {
-  width: 100%;
-  margin: 10px;
-}
-.event_row {
-  width: 25%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+}
+
+.event_row {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0px #121435;
 }

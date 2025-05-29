@@ -27,10 +27,8 @@ const NewsAdmin = ({ news, onDelete }) => {
       className="row event_row d-flex justify-content-center p-3 border"
       data-aos="fade-up"
     >
-      <div class="relative flex w-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+      <div class="flex flex-column items-center justify-center rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
         <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
-          <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 opacity-90"></div>
-          <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] animate-pulse"></div>
           <div class="absolute inset-0 flex items-center justify-center">
             {firstImage ? (
               <img
@@ -50,7 +48,7 @@ const NewsAdmin = ({ news, onDelete }) => {
           </h5>
         </div>
 
-        <div className="row col-12 mt-3 mb-3">
+        <div className="bg-dark p-2 row col-12 mt-3 mb-3">
         <a
           href={`/updatenews/${_id}`}
           className="col-lg-12 btn btn-sm btn-light edit_btn"

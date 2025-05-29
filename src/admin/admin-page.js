@@ -237,14 +237,16 @@ function Adminpage() {
               </div>
             ) : (
               prayers.map((prayer) => (
+                <div 
+                  key={prayer._id} className="col-lg-3 col-md-4 w-5 event_cover">
                 <PrayerAdmin
-                  key={prayer._id}
                   id={prayer._id}
                   name={prayer.name}
                   details={prayer.details}
                   img={prayer.img}
                   onDelete={handlePrayerDelete}
                 />
+                </div>
               ))
             )}
           </div>
@@ -272,41 +274,42 @@ function Adminpage() {
                 />
               </form>
             </div>
-
-            {news.length === 0 ? (
-              <div className="col-12 mt-3">
-                <p>No News Available</p>{" "}
-                {/* Display this when there are no prayers */}
-              </div>
-            ) : news.filter((news) => {
-                const searchTerm = search.toLowerCase();
-                const newsTitle = news.news_title?.toLowerCase() || "";
-                return newsTitle.includes(searchTerm);
-              }).length === 0 ? (
-              <div className="col-12">
-                <p>No news found for your search</p>{" "}
-                {/* Display this when the search returns no results */}
-              </div>
-            ) : (
-              news
-                .filter((news) => {
+            <div className="d-block d-sm-flex">
+              {news.length === 0 ? (
+                <div className="col-lg-3 col-md-4 w-5 event_cover">
+                  <p>No News Available</p>{" "}
+                  {/* Display this when there are no prayers */}
+                </div>
+              ) : news.filter((news) => {
                   const searchTerm = search.toLowerCase();
-                  const newsTitle = news.prayer_title?.toLowerCase() || "";
+                  const newsTitle = news.news_title?.toLowerCase() || "";
                   return newsTitle.includes(searchTerm);
-                })
-                .map((news, id) => (
-                  <div className="col-lg-3 col-md-4 event_cover" key={id}>
-                    <NewsAdmin news={news} onDelete={handleNewsDelete} />
-                  </div>
-                ))
-            )}
+                }).length === 0 ? (
+                <div className="col-12">
+                  <p>No news found for your search</p>{" "}
+                  {/* Display this when the search returns no results */}
+                </div>
+              ) : (
+                news
+                  .filter((news) => {
+                    const searchTerm = search.toLowerCase();
+                    const newsTitle = news.news_title?.toLowerCase() || "";
+                    return newsTitle.includes(searchTerm);
+                  })
+                  .map((news, id) => (
+                    <div className="col-lg-3 col-md-4 w-5 event_cover" key={id}>
+                      <NewsAdmin news={news} onDelete={handleNewsDelete} />
+                    </div>
+                  ))
+              )}
+            </div>
           </div>
 
           {/* Booked Masses Section */}
           <div className="row col-12" id="BookedMasses">
             <h1 className="mt-5">Booked Masses</h1>
-            {/* This component will handle the display and management of booked masses */}  
-          <BookingAdmin />
+            {/* This component will handle the display and management of booked masses */}
+            <BookingAdmin />
           </div>
         </div>
       )}

@@ -132,7 +132,7 @@ function Bookmass() {
               {paymentDone && (
                 <>
                   <div>
-                    <label>Upload Receipt</label>
+                    <label>Upload Family Image</label>
                     <input
                       type="file"
                       accept=".jpg,.jpeg,.png,.pdf"

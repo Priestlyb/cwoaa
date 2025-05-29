@@ -83,6 +83,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .news-section {
+  padding: 2rem 0rem;
+}
+
   .news-card {
     width: 250px;
   }

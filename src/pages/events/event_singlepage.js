@@ -119,7 +119,7 @@ const EventSinglePage = () => {
               </small>
             </div>
 
-            <div className="col-md-5">
+            <div className="col-md-5 d-none d-sm-block">
               <img
                 src={event.event_img?.[0]?.url || "/no-image.jpg"}
                 alt=""

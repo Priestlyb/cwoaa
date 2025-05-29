@@ -24,11 +24,11 @@ const Adminsingle = ({ event, onDelete }) => {
 
   return (
     <div
-      className="row event_row justify-content-center p-3 border"
+      className="row event_row d-flex justify-content-center p-3 border"
     >
-      <div class="w-100 rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl ">
-        <div class="mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
-          <div class=" inset-0 flex items-center justify-center">
+      <div clasNames="flex flex-column items-center justify-center rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
+          <div classame="absolute inset-0 flex items-center justify-center">
             {firstImage ? (
               <img
                 src={firstImage.url || "/no-image.jpg"}
@@ -40,18 +40,18 @@ const Adminsingle = ({ event, onDelete }) => {
             )}
           </div>
         </div>
-        <div class="p-6">
-          <h5 class="mt-3 mb-2 block font-sans text-sm font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300">
+        <div className="p-10">
+          <h5 className="mt-3 mb-2 block font-sans text-sm font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300">
           <h5 className="fw-bold">Title:</h5>
             {truncateText(event_title)}
           </h5>
-          <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+          <p className="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
             <h5 className="fw-semibold">Event details:</h5>
             {truncateText(event_desc)}
           </p>
         </div>
 
-        <div className="row col-12 mt-3 mb-3">
+        <div className="bg-dark p-2 row col-12 mt-3 mb-3 flex items-center justify-center">
         <a
           href={`/updateevent/${_id}`}
           className="col-lg-12 btn btn-sm btn-light edit_btn"

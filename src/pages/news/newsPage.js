@@ -77,7 +77,7 @@ const NewsPage = () => {
 
               <h2 className="featurette-heading fw-normal lh-1">Gallery</h2>
               <br />
-              <div className="d-flex gap-3">
+              <div className="d-flex flex-column flex-sm-row m-sm-5 gap-3">
                 {news.news_img.map((img, index) => (
                   <div
                     key={index}
@@ -93,7 +93,7 @@ const NewsPage = () => {
               </div>
             </div>
 
-            <div className="col-md-5">
+            <div className="col-md-5 d-none d-sm-block">
               {news.news_img && news.news_img[1] ? (
                 <img
                   src={news.news_img[1].url || "/no-image.jpg"}
